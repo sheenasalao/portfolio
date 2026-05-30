@@ -3,144 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheena Salao | Web Developer & Social Media Manager</title>
-    <meta name="description" content="Sheena Salao - Information Systems Student, Web Developer & Social Media Manager Portfolio">
+    <title>Sheena Salao | Social Media Manager</title>
+    <meta name="description" content="Sheena Salao - Information Systems Student & Social Media Manager Portfolio">
     
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
+<div class="cursor-glow"></div>
 <div class="scroll-progress"></div>
 
 <nav class="navbar">
     <div class="navbar-container">
         <div class="navbar-logo">
-            <a href="#home">SS</a>
+            <a href="#home">sheena.s</a>
         </div>
 
         <ul class="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#home" class="nav-link active">home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">work</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">connect</a></li>
         </ul>
 
         <div class="nav-controls">
-            <button class="dark-mode-toggle" id="darkModeToggle">
-                <i class="fas fa-moon"></i>
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Theme">
+                <i class="far fa-sun"></i>
             </button>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Menu Open">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </div>
 </nav>
 
 <section id="home" class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Hi, I'm <span class="highlight">Sheena Salao</span></h1>
-        <p class="hero-subtitle">Web Developer | Social Media Manager | Information Systems Student</p>
-        <p class="hero-description">
-            I build responsive web experiences using HTML, CSS, and JavaScript while managing digital presence through effective social media strategies. I also create engaging content and short-form videos to boost audience reach and engagement.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Projects</a>
-            <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+    <div class="hero-split-wrapper">
+        <div class="hero-text-side">
+            <span class="hero-tagline">social media manager & creator</span>
+            <h1 class="hero-title">crafting digital aesthetics with <em>purpose</em>.</h1>
+            <p class="hero-description">
+                Hi, I'm Sheena. I balance the data and logic of Information Systems with visual curation. I transform ordinary social feeds into highly engaging, aesthetic experiences while using structured data insights to maximize reach.
+            </p>    
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">explore curated work</a>
+                <a href="#contact" class="btn btn-secondary">let's chat</a>
+            </div>
+        </div>
+        <div class="hero-image-side">
+            <div class="editorial-frame">
+                <img src="C:\Users\sheen\Downloads\profile.jpg" alt="Sheena Salao Profile Focus">
+                <div class="floating-badge">based in iloilo</div>
+            </div>
         </div>
     </div>
-
     <div class="hero-scroll">
-        <i class="fas fa-chevron-down"></i>
+        <span class="scroll-text">scroll to explore</span>
+        <i class="fas fa-long-arrow-alt-down"></i>
     </div>
 </section>
 
 <section id="about" class="about">
     <div class="container">
-        <h2 class="section-title">About <span>Me</span></h2>
-
-        <div class="about-wrapper">
-            <div class="about-image fade-in">
-                <img src="profile.jpg" alt="Sheena Salao - Profile Photo">
+        <div class="about-grid-layout">
+            <div class="about-main-text">
+                <h2 class="section-title text-left">the <span>philosophy</span></h2>
+                <p class="philosophy-p">
+                    I treat social grids like an art gallery exhibition. Everything needs a strategic reason to exist, wrapped inside an undeniably beautiful container. 
+                </p>
+                <p class="philosophy-sub">
+                    Currently an Information Systems student, I bridge the gap between technical metrics (Excel data modeling & performance reporting) and pure visual content development (short-form editing & aesthetic layout execution).
+                </p>
+                
+                <div class="education-block">
+                    <span class="edu-tag">academics</span>
+                    <h4>BS in Information Systems</h4>
+                    <p>West Visayas State University — 2026</p>
+                </div>
             </div>
 
-            <div class="about-info">
-                <div class="about-text fade-in">
-                    <h3>Who I Am</h3>
-                    <p>
-                        I'm an Information Systems student with a passion for web development and digital marketing. As a Social Media Manager, I specialize in creating engaging content, developing strategies, and building authentic connections between brands and their audiences.
-                    </p>
-                    <p>
-                        I have hands-on experience in content creation, audience engagement, and short video editing. I also use tools like Microsoft Excel to organize data and support decision-making while improving online visibility and performance.
-                    </p>
+            <div class="about-bento-grid">
+                <div class="bento-item">
+                    <i class="fas fa-compass"></i>
+                    <h4>Curation</h4>
+                    <p>Visual planning, grid layouts & trend aesthetics</p>
                 </div>
-
-                <div class="expertise fade-in">
-                    <h3>My Expertise</h3>
-                    <div class="expertise-grid">
-                        <div class="expertise-item">
-                            <i class="fas fa-code"></i>
-                            <h4>Web Development</h4>
-                            <p>HTML, CSS, JavaScript</p>
-                        </div>
-                        <div class="expertise-item">
-                            <i class="fas fa-bullhorn"></i>
-                            <h4>Social Media</h4>
-                            <p>Content strategy & engagement optimization</p>
-                        </div>
-                        <div class="expertise-item">
-                            <i class="fas fa-video"></i>
-                            <h4>Short Video Editing</h4>
-                            <p>Creating engaging short-form content</p>
-                        </div>
-                        <div class="expertise-item">
-                            <i class="fas fa-file-excel"></i>
-                            <h4>Microsoft Excel</h4>
-                            <p>Data organization & reporting</p>
-                        </div>
-                    </div>
+                <div class="bento-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Analytics</h4>
+                    <p>Performance metrics, audience tracking & data cleaning via Excel</p>
                 </div>
-
-                <div class="skills fade-in">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <p>HTML/CSS</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-file-excel"></i>
-                            <p>Excel (MS Office)</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-palette"></i>
-                            <p>Canva</p>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-image"></i>
-                            <p>Photoshop</p>
-                        </div>
-                    </div>
+                <div class="bento-item">
+                    <i class="fas fa-film"></i>
+                    <h4>Short-Form Video</h4>
+                    <p>High-engagement, clean narrative pacing and pacing styling</p>
                 </div>
-
-                <div class="education fade-in">
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <div class="edu-header">
-                            <h4>Bachelor of Science in Information Systems</h4>
-                            <span class="edu-year">Expected: 2026</span>
-                        </div>
-                        <p class="school-name">West Visayas State University (WVSU)</p>
-                    </div>
+                <div class="bento-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Front-End Dev</h4>
+                    <p>Semantic modern UI layouts using CSS & JavaScript</p>
                 </div>
             </div>
         </div>
@@ -149,95 +114,129 @@
 
 <section id="projects" class="projects">
     <div class="container">
-        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <h2 class="section-title">curated <span>portfolio</span></h2>
         
-        <div class="projects-grid">
-            
-            <div class="project-card fade-in">
-                <div class="project-image">
+        <div class="projects-asymmetric-grid">
+            <div class="project-tilt-card" data-tilt>
+                <div class="project-visual-preview color-bg-1">
+                    <i class="fas fa-signature"></i>
+                </div>
+                <div class="project-details">
+                    <span class="proj-category">Social Strategy / Analytics</span>
+                    <h3>Social Media Dashboard</h3>
+                    <p>Automated audience engagement modeling tracking patterns across channels.</p>
+                </div>
+            </div>
+
+            <div class="project-tilt-card" data-tilt>
+                <div class="project-visual-preview color-bg-2">
+                    <i class="fas fa-photo-film"></i>
+                </div>
+                <div class="project-details">
+                    <span class="proj-category">Content Design</span>
+                    <h3>Short Video Projects</h3>
+                    <p>Strategic narrative reels emphasizing minimal layout aesthetics and crisp flow.</p>
+                </div>
+            </div>
+
+            <div class="project-tilt-card" data-tilt>
+                <div class="project-visual-preview color-bg-3">
+                    <i class="fas fa-feather"></i>
+                </div>
+                <div class="project-details">
+                    <span class="proj-category">Web Development</span>
+                    <h3>Digital Portfolio Studio</h3>
+                    <p>A responsive UI frame focused on minimal grid systems and clean typography layouts.</p>
+                </div>
+            </div>
+
+            <div class="project-tilt-card" data-tilt>
+                <div class="project-visual-preview color-bg-4">
                     <i class="fas fa-chart-pie"></i>
                 </div>
-                <div class="project-content">
-                    <h3>Social Media Analytics Dashboard</h3>
-                    <p class="project-description">
-                        A dashboard that tracks engagement, growth, and content performance across platforms.
-                    </p>
+                <div class="project-details">
+                    <span class="proj-category">Data Architecture</span>
+                    <h3>Engagement Modeling</h3>
+                    <p>Advanced structured data frameworks evaluating localized growth metrics.</p>
                 </div>
             </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <i class="fas fa-bullseye"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Audience Engagement Analysis</h3>
-                    <p class="project-description">
-                        Analysis of audience behavior and engagement trends for content optimization.
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Personal Portfolio Website</h3>
-                    <p class="project-description">
-                        A responsive portfolio built using HTML, CSS, and JavaScript.
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <i class="fas fa-video"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Short Video Content Projects</h3>
-                    <p class="project-description">
-                        Creation and editing of short-form videos for social media engagement.
-                    </p>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
 <section id="contact" class="contact">
     <div class="container">
-        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <div class="contact-split-studio">
+            
+            <div class="contact-curated-info">
+                <div class="editorial-monogram-bg">ss</div>
+                <h2 class="studio-heading">let's align <br><span>visions.</span></h2>
+                <p class="studio-subtext">Have a brand narrative that needs beautiful curation or unstructured data that needs a clean framework? Let's talk.</p>
+                
+                <div class="creative-badges-stack">
+                    <a href="mailto:sheenasalao24@gmail.com" class="studio-badge-item">
+                        <div class="studio-badge-circle"><i class="fa-regular fa-envelope"></i></div>
+                        <div class="studio-badge-details">
+                            <span class="badge-label">direct correspondence</span>
+                            <span class="badge-value">sheenasalao24@gmail.com</span>
+                        </div>
+                    </a>
 
-        <div class="contact-content">
-            <div class="contact-info fade-in">
-                <h3>Get In Touch</h3>
-                <div class="social-links">
-                    <a href="https://github.com/sheenasalao" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <div><strong>GitHub</strong></div>
+                    <a href="https://linkedin.com/in/sheenasalao" target="_blank" class="studio-badge-item">
+                        <div class="studio-badge-circle"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="studio-badge-details">
+                            <span class="badge-label">professional footprint</span>
+                            <span class="badge-value">linkedin.com/in/sheenasalao</span>
+                        </div>
                     </a>
-                    <a href="https://linkedin.com/in/sheenasalao" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <div><strong>LinkedIn</strong></div>
+
+                    <a href="https://github.com/sheenasalao" target="_blank" class="studio-badge-item">
+                        <div class="studio-badge-circle"><i class="fa-solid fa-shapes"></i></div>
+                        <div class="studio-badge-details">
+                            <span class="badge-label">logic & frameworks</span>
+                            <span class="badge-value">github.com/sheenasalao</span>
+                        </div>
                     </a>
-                    <a href="mailto:sheena.salao@example.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                        <div><strong>Email</strong></div>
-                    </a>
-                    <a href="https://wa.me/639XXXXXXXXX" target="_blank" class="social-link">
-                        <i class="fab fa-whatsapp"></i>
-                        <div><strong>WhatsApp</strong></div>
+
+                    <a href="https://wa.me/639395694321" target="_blank" class="studio-badge-item">
+                        <div class="studio-badge-circle"><i class="fa-regular fa-bell"></i></div>
+                        <div class="studio-badge-details">
+                            <span class="badge-label">instant line</span>
+                            <span class="badge-value">0939 569 4321</span>
+                        </div>
                     </a>
                 </div>
             </div>
+
+            <div class="contact-form-studio">
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_ID" method="POST" class="studio-clean-form">
+                    <div class="studio-input-group">
+                        <label class="studio-label">your name</label>
+                        <input type="text" name="name" placeholder="name" required>
+                    </div>
+                    <div class="studio-input-group">
+                        <label class="studio-label">your email address</label>
+                        <input type="email" name="_replyto" placeholder="email" required>
+                    </div>
+                    <div class="studio-input-group">
+                        <label class="studio-label">your project narrative</label>
+                        <textarea name="message" placeholder="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary studio-btn">send message <i class="fa-solid fa-arrow-right-long" style="margin-left: 8px; font-size: 11px;"></i></button>
+                </form>
+            </div>
+
         </div>
     </div>
 </section>
 
+<button class="back-to-top" id="backToTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2026 Sheena Salao. All rights reserved.</p>
+        <p>&copy; 2026 sheena salao. curated entirely with intentionality.</p>
     </div>
 </footer>
 

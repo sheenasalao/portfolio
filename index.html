@@ -1,245 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheena Salao | Social Media Manager</title>
-    <meta name="description" content="Sheena Salao - Information Systems Student & Social Media Manager Portfolio">
-    
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sheena Salao — Administrative and Customer Service Virtual Assistant portfolio.">
+<title>Sheena Salao | Administrative Virtual Assistant</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="progress" id="progress"></div>
+<header class="nav">
+ <div class="wrap nav-inner">
+  <a class="brand" href="#home">sheena<span>.</span>salao</a>
+  <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+   <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Sample work</a><a href="#experience">Background</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions"><button class="iconbtn" id="themeToggle" aria-label="Toggle light or dark mode" title="Toggle theme">☾</button><button class="menu-btn" id="menuToggle" aria-label="Open navigation">☰</button></div>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+ <div class="reveal">
+  <div class="eyebrow"><span class="dot"></span> Administrative & Customer Service VA</div>
+  <h1>Making busy work feel <em>lighter.</em></h1>
+  <p class="lead">Hello, I’m Sheena — an Information Systems graduate specializing in Business Analytics. I help keep everyday operations organized through thoughtful administrative support, accurate records, and clear customer communication.</p>
+  <div class="hero-ctas"><a class="btn primary" href="#contact">Let’s work together <span>↗</span></a><a class="btn secondary" href="#work">Explore sample work ↓</a></div>
+  <div class="quickfacts"><span>✦ Detail-oriented</span><span>✦ Organized workflows</span><span>✦ Digital-first support</span></div>
+ </div>
+ <div class="hero-art reveal" aria-label="Decorative portfolio illustration">
+  <div class="orbit">
+   <label class="profile-photo-picker" for="profilePhotoInput" title="Choose your profile photo" aria-label="Choose your profile photo">
+    <img id="profilePhoto" class="profile-photo" src="profile.png" alt="Sheena Salao profile photo" >
+    <span class="initials" id="profileInitials">SS</span>
+    <span class="photo-change-hint">Change photo</span>
+   </label>
+   <input id="profilePhotoInput" class="visually-hidden" type="file" accept="image/*" aria-label="Upload a profile photo">
+  </div>
+  <div class="float-card fc1"><strong>Organized & ready</strong><small>Files · tasks · schedules</small></div>
+  <div class="float-card fc2"><strong>Accuracy first</strong><small>Records checked with care</small></div>
+  <div class="float-card fc3"><strong>✳ 4 focus areas</strong><small>One reliable support partner</small></div>
+ </div>
+</div></section>
+<section class="section alt" id="about"><div class="wrap">
+ <div class="section-head reveal"><div><div class="kicker">01 / A little about me</div><h2>Structure behind the scenes.<br>Care in every detail.</h2></div><p class="section-intro">A practical, people-focused approach to keeping information clear and day-to-day work moving.</p></div>
+ <div class="about-grid">
+  <div class="note-card reveal"><div class="bigquote">“</div><p>Reliable support starts with listening, organizing, and following through.</p></div>
+  <div class="about-copy reveal"><p>I’m a BS Information Systems graduate from West Visayas State University, majoring in Business Analytics. My academic and internship experience helped me build a foundation in digital record management, documentation, reporting, office coordination, and data tracking.</p><p>During my internship with the Iloilo Provincial Culture, Arts, History and Tourism Office, I maintained data logs in Excel, used shared Google tools to support team coordination, helped prepare reports, and supported digital communications. I bring that same care for accuracy and organization to administrative and customer support tasks.</p><div class="pillrow"><span class="pill">Documentation</span><span class="pill">Record management</span><span class="pill">Spreadsheet tracking</span><span class="pill">Written communication</span><span class="pill">Task coordination</span></div></div>
+ </div>
+</div></section>
+<section class="section" id="services"><div class="wrap">
+ <div class="section-head reveal"><div><div class="kicker">02 / What I can help with</div><h2>Support that gives you<br>room to focus.</h2></div><p class="section-intro">Select a service card to see examples of the tasks that can fit within each support area.</p></div>
+ <div class="service-grid">
+  <article class="service reveal" data-service="admin"><span class="num">01 / OPERATIONS</span><div class="symbol">▤</div><h3>Administrative Support</h3><p>Keep documents, files, and everyday tasks in order.</p><span class="learn">Explore tasks ↗</span></article>
+  <article class="service reveal" data-service="data"><span class="num">02 / ACCURACY</span><div class="symbol">▦</div><h3>Data Entry & Records</h3><p>Maintain organized, consistent digital information.</p><span class="learn">Explore tasks ↗</span></article>
+  <article class="service reveal" data-service="email"><span class="num">03 / COORDINATION</span><div class="symbol">✉</div><h3>Email & Scheduling</h3><p>Support inbox organization, calendars, and reminders.</p><span class="learn">Explore tasks ↗</span></article>
+  <article class="service reveal" data-service="customer"><span class="num">04 / PEOPLE</span><div class="symbol">♡</div><h3>Customer Service</h3><p>Help customers feel heard with clear, courteous replies.</p><span class="learn">Explore tasks ↗</span></article>
+ </div>
+ <div class="service-detail" id="serviceDetail" aria-live="polite"><strong>Choose a service above</strong> to see task examples.</div>
+</div></section>
+<section class="section alt"><div class="wrap">
+ <div class="section-head reveal"><div><div class="kicker">03 / How I work</div><h2>A simple, dependable workflow.</h2></div><p class="section-intro">Clear expectations and careful checks help make collaboration easier.</p></div>
+ <div class="workflow">
+  <div class="step reveal"><div class="stepno">01</div><h3>Understand</h3><p>Clarify the goal, instructions, priority, and preferred format.</p></div>
+  <div class="step reveal"><div class="stepno">02</div><h3>Organize</h3><p>Set up files, trackers, task lists, or a repeatable process.</p></div>
+  <div class="step reveal"><div class="stepno">03</div><h3>Complete & check</h3><p>Work carefully, verify entries, and review details before handoff.</p></div>
+  <div class="step reveal"><div class="stepno">04</div><h3>Update</h3><p>Share progress, flag missing information, and document next steps.</p></div>
+ </div>
+</div></section>
+<section class="section" id="work"><div class="wrap">
+ <div class="section-head reveal"><div><div class="kicker">04 / Sample work</div><h2>Realistic workflows. Clear records.</h2></div><p class="section-intro">Explore practical sample layouts for data entry, file management, scheduling, email management, and customer support. These examples use fictional details to demonstrate how I can organize everyday administrative tasks.</p></div>
 
-<div class="cursor-glow"></div>
-<div class="scroll-progress"></div>
+ <div class="work-toolbar reveal" role="group" aria-label="Filter sample work">
+  <button class="filter active" data-filter="all">All examples</button><button class="filter" data-filter="admin">Admin support</button><button class="filter" data-filter="data">Data & records</button><button class="filter" data-filter="email">Email & scheduling</button><button class="filter" data-filter="customer">Customer service</button>
+ </div>
+ <div class="work-grid">
+  <article class="work-card reveal" data-category="data"><div class="work-cover screenshot-cover"><img class="work-screenshot" src="sample-data-entry.png" alt="Illustrative spreadsheet showing a contact database with names, email addresses, phone numbers, positions, companies, and record status" loading="lazy"></div><div class="work-content"><span class="work-type">Data entry & records</span><h3>Contact database tracker</h3><p>A structured spreadsheet for entering and reviewing contact details, role information, and record status.</p><button class="details-btn" type="button">View example details +</button></div><div class="work-detail">Sample fields include full name, email address, phone number, position, company, and status. A real workflow can include consistent formatting, required-field checks, duplicate review, and a clear process for flagging missing information. All names and contact details shown are fictional.</div></article>
+  <article class="work-card reveal" data-category="admin"><div class="work-cover screenshot-cover"><img class="work-screenshot" src="sample-file-management.png" alt="Illustrative cloud drive folder structure for client files, reports, invoices, presentations, templates, and archive" loading="lazy"></div><div class="work-content"><span class="work-type">File management</span><h3>Organized digital workspace</h3><p>A sample cloud-drive structure for keeping client files and recurring documents easy to locate.</p><button class="details-btn" type="button">View example details +</button></div><div class="work-detail">A clear folder structure can separate client files, reports, invoices, presentations, templates, and archived records. File names can follow a consistent date-and-topic pattern, with access permissions and backup routines confirmed with the client.</div></article>
+  <article class="work-card reveal" data-category="email"><div class="work-cover screenshot-cover"><img class="work-screenshot" src="sample-scheduling.png" alt="Illustrative weekly calendar with team meeting, client call, project planning, content planning, and follow-up reminders" loading="lazy"></div><div class="work-content"><span class="work-type">Scheduling & coordination</span><h3>Weekly calendar coordination</h3><p>A calendar layout for meetings, client calls, planning blocks, and follow-up reminders.</p><button class="details-btn" type="button">View example details +</button></div><div class="work-detail">A scheduling workflow can include checking availability, confirming time zones, sending invitations, preparing agendas, and setting reminders. Meeting details in this visual are illustrative; actual appointments would be entered only with the client's authorization.</div></article>
+  <article class="work-card reveal" data-category="email"><div class="work-cover screenshot-cover"><img class="work-screenshot" src="sample-email-management.png" alt="Illustrative email inbox with client inquiry, weekly update, security alert, invoice, and client support messages" loading="lazy"></div><div class="work-content"><span class="work-type">Email management</span><h3>Inbox triage & follow-ups</h3><p>A sample inbox view for spotting client inquiries, team updates, invoices, and items that need a response.</p><button class="details-btn" type="button">View example details +</button></div><div class="work-detail">A practical inbox routine may sort messages by urgency and topic, flag unanswered requests, draft professional replies, and track follow-ups. Sensitive messages should be handled according to the client's instructions and privacy requirements. The messages shown are fictional examples.</div></article>
+  <article class="work-card reveal" data-category="customer"><div class="work-cover screenshot-cover"><img class="work-screenshot" src="sample-customer-support.png" alt="Illustrative customer-support chat with an order-status inquiry and a polite support response" loading="lazy"></div><div class="work-content"><span class="work-type">Customer support</span><h3>Order inquiry & resolution</h3><p>A realistic example of acknowledging a customer, checking an order status, and explaining the next step.</p><button class="details-btn" type="button">View example details +</button></div><div class="work-detail">Example response: “Hello! Thanks for reaching out. I’ll check the latest status of your order and confirm the expected delivery date. If there’s any change, I’ll let you know the next step.” For refunds, cancellations, or sensitive concerns, follow the business's approved policy and escalate when needed. Customer and order details are fictional.</div></article>
+ </div>
+ <p class="honesty-note">Portfolio note: All names, messages, dates, and records in these visuals are fictional examples created to demonstrate my approach. They are not actual client records or claims of paid client work. My internship and academic experience are described separately in the Background section.</p>
+</div></section>
+<section class="section alt" id="experience"><div class="wrap">
+ <div class="section-head reveal"><div><div class="kicker">05 / Background & tools</div><h2>Built on real practice<br>and continuous learning.</h2></div><p class="section-intro">My background combines information systems, data handling, and coordination work.</p></div>
+ <div class="experience">
+  <article class="exp-card reveal"><div class="exp-top"><h3>Social Media & Data Management Intern</h3><span class="date">Jan–Apr 2026</span></div><div class="org">Iloilo Provincial Culture, Arts, History and Tourism Office</div><ul><li>Maintained administrative data logs using Excel formulas to calculate visitor totals.</li><li>Used Google Sheets and Docs for work schedules, workflow tracking, and team updates.</li><li>Assisted with digital communications, visual reports, announcements, and engagement metrics.</li><li>Supported file organization, report preparation, and day-to-day administrative requests.</li></ul></article>
+  <article class="exp-card reveal"><div class="exp-top"><h3>BS Information Systems</h3><span class="date">2022–2026</span></div><div class="org">West Visayas State University · Major in Business Analytics</div><ul><li>Graduated Magna Cum Laude.</li><li>Worked on system documentation, data organization, and collaborative project workflows.</li><li>Contributed to a visa application tracking system designed to make tracking easier for clients and staff.</li><li>Worked as a data analyst on LotIS, an integrated disaster response information system thesis project.</li></ul></article>
+ </div>
+ <div style="margin-top:32px" class="reveal"><div class="kicker">Tools & platforms</div><div class="toolbox">
+<div class="toolbox">
 
-<nav class="navbar">
-    <div class="navbar-container">
-        <div class="navbar-logo">
-            <a href="#home">sheena.s</a>
-        </div>
+<div class="toolbox">
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" alt="Microsoft Word">
+    Microsoft Word
+  </span>
 
-        <ul class="nav-menu">
-            <li class="nav-item"><a href="#home" class="nav-link active">home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link">work</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">connect</a></li>
-        </ul>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Microsoft Excel">
+    Microsoft Excel
+  </span>
 
-        <div class="nav-controls">
-            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Theme">
-                <i class="far fa-sun"></i>
-            </button>
-            <button class="hamburger" id="hamburger" aria-label="Menu Open">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</nav>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/microsoft-powerpoint-2019--v1.png" alt="Microsoft PowerPoint">
+    PowerPoint
+  </span>
 
-<section id="home" class="hero">
-    <div class="hero-split-wrapper">
-        <div class="hero-text-side">
-            <span class="hero-tagline">social media manager & creator</span>
-            <h1 class="hero-title">crafting digital aesthetics with <em>purpose</em>.</h1>
-            <p class="hero-description">
-                Hi, I'm Sheena. I balance the data and logic of Information Systems with visual curation. I transform ordinary social feeds into highly engaging, aesthetic experiences while using structured data insights to maximize reach.
-            </p>    
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">explore curated work</a>
-                <a href="#contact" class="btn btn-secondary">let's chat</a>
-            </div>
-        </div>
-        <div class="hero-image-side">
-            <div class="editorial-frame">
-                <img src="C:\Users\sheen\Downloads\profile.jpg" alt="Sheena Salao Profile Focus">
-                <div class="floating-badge">based in iloilo</div>
-            </div>
-        </div>
-    </div>
-    <div class="hero-scroll">
-        <span class="scroll-text">scroll to explore</span>
-        <i class="fas fa-long-arrow-alt-down"></i>
-    </div>
-</section>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/google-docs--v1.png" alt="Google Docs">
+    Google Docs
+  </span>
 
-<section id="about" class="about">
-    <div class="container">
-        <div class="about-grid-layout">
-            <div class="about-main-text">
-                <h2 class="section-title text-left">the <span>philosophy</span></h2>
-                <p class="philosophy-p">
-                    I treat social grids like an art gallery exhibition. Everything needs a strategic reason to exist, wrapped inside an undeniably beautiful container. 
-                </p>
-                <p class="philosophy-sub">
-                    Currently an Information Systems student, I bridge the gap between technical metrics (Excel data modeling & performance reporting) and pure visual content development (short-form editing & aesthetic layout execution).
-                </p>
-                
-                <div class="education-block">
-                    <span class="edu-tag">academics</span>
-                    <h4>BS in Information Systems</h4>
-                    <p>West Visayas State University — 2026</p>
-                </div>
-            </div>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/google-sheets--v1.png" alt="Google Sheets">
+    Google Sheets
+  </span>
 
-            <div class="about-bento-grid">
-                <div class="bento-item">
-                    <i class="fas fa-compass"></i>
-                    <h4>Curation</h4>
-                    <p>Visual planning, grid layouts & trend aesthetics</p>
-                </div>
-                <div class="bento-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>Analytics</h4>
-                    <p>Performance metrics, audience tracking & data cleaning via Excel</p>
-                </div>
-                <div class="bento-item">
-                    <i class="fas fa-film"></i>
-                    <h4>Short-Form Video</h4>
-                    <p>High-engagement, clean narrative pacing and pacing styling</p>
-                </div>
-                <div class="bento-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h4>Front-End Dev</h4>
-                    <p>Semantic modern UI layouts using CSS & JavaScript</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/google-drive--v2.png" alt="Google Drive">
+    Google Drive
+  </span>
 
-<section id="projects" class="projects">
-    <div class="container">
-        <h2 class="section-title">curated <span>portfolio</span></h2>
-        
-        <div class="projects-asymmetric-grid">
-            <div class="project-tilt-card" data-tilt>
-                <div class="project-visual-preview color-bg-1">
-                    <i class="fas fa-signature"></i>
-                </div>
-                <div class="project-details">
-                    <span class="proj-category">Social Strategy / Analytics</span>
-                    <h3>Social Media Dashboard</h3>
-                    <p>Automated audience engagement modeling tracking patterns across channels.</p>
-                </div>
-            </div>
+ <span class="tool">
+    <img src="https://cdn.simpleicons.org/asana/F06A6A" alt="Asana logo" class="tool-logo">
+    Asana
+  </span>
 
-            <div class="project-tilt-card" data-tilt>
-                <div class="project-visual-preview color-bg-2">
-                    <i class="fas fa-photo-film"></i>
-                </div>
-                <div class="project-details">
-                    <span class="proj-category">Content Design</span>
-                    <h3>Short Video Projects</h3>
-                    <p>Strategic narrative reels emphasizing minimal layout aesthetics and crisp flow.</p>
-                </div>
-            </div>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/trello.png" alt="Trello">
+    Trello
+  </span>
 
-            <div class="project-tilt-card" data-tilt>
-                <div class="project-visual-preview color-bg-3">
-                    <i class="fas fa-feather"></i>
-                </div>
-                <div class="project-details">
-                    <span class="proj-category">Web Development</span>
-                    <h3>Digital Portfolio Studio</h3>
-                    <p>A responsive UI frame focused on minimal grid systems and clean typography layouts.</p>
-                </div>
-            </div>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/canva.png" alt="Canva">
+    Canva
+  </span>
 
-            <div class="project-tilt-card" data-tilt>
-                <div class="project-visual-preview color-bg-4">
-                    <i class="fas fa-chart-pie"></i>
-                </div>
-                <div class="project-details">
-                    <span class="proj-category">Data Architecture</span>
-                    <h3>Engagement Modeling</h3>
-                    <p>Advanced structured data frameworks evaluating localized growth metrics.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/figma--v1.png" alt="Figma">
+    Figma
+  </span>
 
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="contact-split-studio">
-            
-            <div class="contact-curated-info">
-                <div class="editorial-monogram-bg">ss</div>
-                <h2 class="studio-heading">let's align <br><span>visions.</span></h2>
-                <p class="studio-subtext">Have a brand narrative that needs beautiful curation or unstructured data that needs a clean framework? Let's talk.</p>
-                
-                <div class="creative-badges-stack">
-                    <a href="mailto:sheenasalao24@gmail.com" class="studio-badge-item">
-                        <div class="studio-badge-circle"><i class="fa-regular fa-envelope"></i></div>
-                        <div class="studio-badge-details">
-                            <span class="badge-label">direct correspondence</span>
-                            <span class="badge-value">sheenasalao24@gmail.com</span>
-                        </div>
-                    </a>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/power-bi.png" alt="Microsoft Power BI">
+    Power BI
+  </span>
 
-                    <a href="https://linkedin.com/in/sheenasalao" target="_blank" class="studio-badge-item">
-                        <div class="studio-badge-circle"><i class="fa-solid fa-seedling"></i></div>
-                        <div class="studio-badge-details">
-                            <span class="badge-label">professional footprint</span>
-                            <span class="badge-value">linkedin.com/in/sheenasalao</span>
-                        </div>
-                    </a>
+  <span class="tool">
+    <img class="tool-logo" src="https://img.icons8.com/color/96/chatgpt.png" alt="ChatGPT and AI productivity tools">
+    AI research &amp; productivity tools
+  </span>
+</div>
 
-                    <a href="https://github.com/sheenasalao" target="_blank" class="studio-badge-item">
-                        <div class="studio-badge-circle"><i class="fa-solid fa-shapes"></i></div>
-                        <div class="studio-badge-details">
-                            <span class="badge-label">logic & frameworks</span>
-                            <span class="badge-value">github.com/sheenasalao</span>
-                        </div>
-                    </a>
-
-                    <a href="https://wa.me/639395694321" target="_blank" class="studio-badge-item">
-                        <div class="studio-badge-circle"><i class="fa-regular fa-bell"></i></div>
-                        <div class="studio-badge-details">
-                            <span class="badge-label">instant line</span>
-                            <span class="badge-value">0939 569 4321</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="contact-form-studio">
-                <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_ID" method="POST" class="studio-clean-form">
-                    <div class="studio-input-group">
-                        <label class="studio-label">your name</label>
-                        <input type="text" name="name" placeholder="name" required>
-                    </div>
-                    <div class="studio-input-group">
-                        <label class="studio-label">your email address</label>
-                        <input type="email" name="_replyto" placeholder="email" required>
-                    </div>
-                    <div class="studio-input-group">
-                        <label class="studio-label">your project narrative</label>
-                        <textarea name="message" placeholder="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary studio-btn">send message <i class="fa-solid fa-arrow-right-long" style="margin-left: 8px; font-size: 11px;"></i></button>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<button class="back-to-top" id="backToTop" aria-label="Scroll to top">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2026 sheena salao. curated entirely with intentionality.</p>
-    </div>
-</footer>
-
-<script src="script.js"></script>
+</div></section>
+<section class="section" id="contact"><div class="wrap">
+ <div class="section-head reveal"><div><div class="kicker">06 / Let’s connect</div><h2>Need a little more order<br>in your workday?</h2></div><p class="section-intro">Tell me what kind of support you need. I’d be glad to discuss the workflow, priorities, and tools that fit your team.</p></div>
+ <div class="contact-grid">
+  <div class="reveal"><div class="contact-panel">
+   <div class="contact-item"><div class="contact-icon">✉</div><div><small>Email</small><strong><a href="mailto:sheenasalao24@gmail.com">sheenasalao24@gmail.com</a></strong></div></div>
+   <div class="contact-item"><div class="contact-icon">☎</div><div><small>Phone / WhatsApp</small><strong><a href="https://wa.me/639395694321" target="_blank" rel="noopener">+63 939 569 4321</a></strong></div></div>
+   <div class="contact-item"><div class="contact-icon">⌘</div><div><small>GitHub</small><strong><a href="https://github.com/sheenasalao" target="_blank" rel="noopener">github.com/sheenasalao</a></strong></div></div>
+   <div class="contact-item"><div class="contact-icon">in</div><div><small>LinkedIn</small><strong><a href="https://www.linkedin.com/in/sheena-salao-66165a414/" target="_blank" rel="noopener">Sheena Salao</a></strong></div></div>
+  </div><p class="form-note">Based in Jordan, Guimaras, Philippines. Open to discussing remote administrative and customer support opportunities.</p></div>
+  <form class="contact-panel reveal" id="contactForm">
+   <div class="formrow"><label for="name">Your name</label><input id="name" name="name" placeholder="How should I address you?" required></div>
+   <div class="formrow"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@company.com" required></div>
+   <div class="formrow"><label for="need">What support do you need?</label><select id="need" name="need"><option>Administrative support</option><option>Data entry & records</option><option>Email & scheduling</option><option>Customer service</option><option>Multiple support areas</option><option>Other / not sure yet</option></select></div>
+   <div class="formrow"><label for="message">A few details</label><textarea id="message" name="message" placeholder="Share a little about your project or support needs." required></textarea></div>
+   <button class="btn primary" type="submit">Prepare email ↗</button>
+   <p class="form-note">This form opens a pre-filled email in your email app. It does not send or store your message on this website.</p>
+  </form>
+ </div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Sheena Salao · Administrative Virtual Assistant</span><span>Thoughtful support. Organized work.</span></div></footer>
+<button class="topbtn" id="topBtn" aria-label="Back to top">↑</button><div class="toast" id="toast" role="status"></div>
+<script src="script.js" defer></script>
 </body>
 </html>
